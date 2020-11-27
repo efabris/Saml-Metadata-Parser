@@ -51,10 +51,14 @@ class SSODescriptor {
         }
 
         let obj =
-            keyDescriptorArray.find(item => item.use === type) ||
-            keyDescriptorArray[0];
+            keyDescriptorArray.find(item => {
+                return item.use === type;
+            }) || keyDescriptorArray[0];
 
-        obj = obj.KeyInfo;
+        obj =
+            obj.KeyInfo instanceof Array
+                ? obj.KeyInfo[0]
+                : obj.KeyInfo;
         obj = obj.X509Data;
         return obj.X509Certificate;
     }
