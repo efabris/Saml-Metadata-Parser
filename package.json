@@ -1,7 +1,7 @@
 {
   "name": "saml-metadata-parser",
   "description": "",
-  "version": "1.0.2a",
+  "version": "1.0.3",
   "private": false,
   "author": "Samuli Suortti",
   "contributors": ["Enrico Fabris"],
