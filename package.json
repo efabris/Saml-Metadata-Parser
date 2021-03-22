@@ -1,7 +1,7 @@
 {
   "name": "saml-metadata-parser",
   "description": "",
-  "version": "1.0.2a",
+  "version": "1.0.3",
   "private": true,
   "author": "Samuli Suortti",
   "contributors": [
